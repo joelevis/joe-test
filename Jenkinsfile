@@ -12,8 +12,8 @@ pipeline {
                     pwd
                     echo "This is a test"
                     echo "This is a parameter: $PARAM1"
-                    
                 '''
+                echo "${currentBuild.changeSets}"
             }
             post {
                 always {

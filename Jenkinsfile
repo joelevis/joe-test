@@ -15,6 +15,11 @@ pipeline {
                     
                 '''
             }
+            post {
+                always {
+                    jiraSendBuildInfo site: 'tcgplayer-sandbox-393.atlassian.net'
+                }
+            } 
         }
     }
 }

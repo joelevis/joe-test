@@ -6,7 +6,7 @@ pipeline {
     }
 
     stages {
-        stage('Run in Docker') {
+        stage('Build') {
             steps {
                 sh '''
                     pwd
